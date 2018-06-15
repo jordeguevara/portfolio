@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond");
 html {
   font-size: 62.5%; }
 
@@ -73,7 +76,7 @@ body {
       background-color: white; } }
 
 .signup {
-  background-color: #D46A6A;
+  background-color: #50C878;
   border: solid #fff;
   border-radius: 7.5px; }
   @media only screen and (max-width: 991px) {
@@ -117,7 +120,7 @@ body {
     animation: moveInRight;
     animation-duration: 1.5s;
     animation-timing-function: ease-in; }
-  @media only screen and (max-width: 777px) {
+  @media only screen and (max-width: 944px) {
     .text-box {
       display: none; } }
 
@@ -141,15 +144,28 @@ body {
   text-align: center;
   margin: 2rem 0; }
 
+.about-section__info__title {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase; }
+
+.about-section__info p {
+  font-family: "EB Garamond", serif; }
+
 .about-section__skills li {
   font-size: 5rem;
   list-style-type: none;
   display: inline-block;
-  padding: 0 2.5rem; }
+  padding: 0 2.5rem;
+  transition: 1s; }
+  .about-section__skills li:hover {
+    font-size: 7rem; }
 
 .emp {
   color: #FF5851;
   font-size: 5rem; }
+
+.blue {
+  color: #87cefa; }
 
 .contact-section {
   margin-top: 125px; }

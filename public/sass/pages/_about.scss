@@ -8,7 +8,6 @@ margin-top: 125px;
 	//background-color: white;
 padding-top: 2vh;
 
-
 }
 
 
@@ -25,6 +24,14 @@ padding-top: 2vh;
 
 .about-section__info{
 	//background-color: green;
+	&__title{
+		font-family: $oswald;
+		text-transform: uppercase;
+	}
+
+	p{
+		font-family: $EB;
+	}
 }
 
 .about-section__skills{
@@ -35,7 +42,16 @@ padding-top: 2vh;
 		list-style-type: none;
 		display: inline-block;
 		padding: 0 2.5rem;
+		transition: 1s;
+
+			&:hover{
+			font-size: 7rem;
+			}
+		
+
 	}
+	
+
 }
 
 .emp {
@@ -46,3 +62,12 @@ padding-top: 2vh;
 .row {
 	//background-color: purple;
 }
+
+
+.blue {
+	color: #87cefa;
+}
+
+//over-ride sign up from layout/header
+
+

@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+
+//font-family: 'Oswald', sans-serif;
+//font-family: 'EB Garamond', serif;
+
+// Font Variables
+$Merriweather: 'Slabo 27px', serif;
+$oswald: 'Oswald', sans-serif;
+$EB: 'EB Garamond', serif;
+
 .projects--title {
 	text-transform: uppercase;
 	text-align: center;
 	margin-bottom: 3rem;
 }
+
