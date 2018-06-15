@@ -1,0 +1,48 @@
+.about-section {
+background-color: #FF5851;
+margin-top: 125px;
+
+}
+
+.about-icon{
+	//background-color: white;
+padding-top: 2vh;
+
+
+}
+
+
+.about{
+	background-color:  #FF5851;
+}
+
+.about-section__profile-photo{
+	//background-color: red;
+	text-align: center;
+	margin: 2rem 0;
+}
+
+
+.about-section__info{
+	//background-color: green;
+}
+
+.about-section__skills{
+//	background-color: blue;
+	li {
+
+		font-size: 5rem;
+		list-style-type: none;
+		display: inline-block;
+		padding: 0 2.5rem;
+	}
+}
+
+.emp {
+	color: #FF5851;
+	font-size: 5rem;
+}
+
+.row {
+	//background-color: purple;
+}
