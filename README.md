@@ -19,4 +19,4 @@ Other technologies that I will be working with are: Bootstrap, JQuery, Sketch & 
 
 ## Deployment
 
-I will be using [Heroku ](https://polar-retreat-72400.herokuapp.com/) to deploy the web app
+I will be using Heroku to deploy the web app. [Here is the link ](https://polar-retreat-72400.herokuapp.com/)
