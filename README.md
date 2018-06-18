@@ -11,7 +11,7 @@ MongoDB
 
 Express.js
 
-React
+Angular 2
 
 Node.js
 
