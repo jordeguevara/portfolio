@@ -1,6 +1,6 @@
 # Portfolio Site
 
-Using the MERN stack to create a portfolio site/blog that showcases projects that I am working on.
+Using the MERN stack to create a portfolio site/blog that showcases projects that I am working on:
 
 <img width="1259" alt="code-llama" src="https://user-images.githubusercontent.com/34716202/41547782-fec10c24-72d5-11e8-87ee-4994214fd9b1.png">
 
