@@ -1,11 +1,28 @@
 @import url("https://fonts.googleapis.com/css?family=Slabo+27px");
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 @import url("https://fonts.googleapis.com/css?family=EB+Garamond");
+.navbar-light .navbar-brand {
+  color: white; }
+
+.navbar-light .navbar-toggler {
+  color: white; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  font-size: 1.5rem; }
+
+.navbar-toggler {
+  padding: .75rem .75rem;
+  font-size: 1.75rem; }
+
+.card {
+  border: none; }
+
 html {
   font-size: 62.5%; }
 
 body {
-  background-color: #F0F0F0; }
+  background-color: #FF5851; }
 
 @keyframes moveInLeft {
   0% {
@@ -50,6 +67,12 @@ body {
   background-color: #D46A6A;
   color: #fff; }
 
+p {
+  font-size: 2rem; }
+
+.btn-font-size {
+  font-size: 2rem; }
+
 .feature-box {
   height: 200px;
   font-size: 1.5rem;
@@ -58,37 +81,18 @@ body {
   border-radius: 3px;
   transition: transform .3s; }
   .feature-box__icon {
-    color: #D46A6A;
+    color: #FF5851;
     font-size: 6rem;
     margin-bottom: .5rem;
     display: inline-block; }
   .feature-box h2 {
-    color: #D46A6A; }
-
-.login {
-  background-color: #337eff;
-  border: none;
-  border-radius: 7.5px;
-  margin-left: 1rem; }
-  @media only screen and (max-width: 991px) {
-    .login {
-      margin-left: 0;
-      background-color: white; } }
-
-.signup {
-  background-color: #50C878;
-  border: solid #fff;
-  border-radius: 7.5px; }
-  @media only screen and (max-width: 991px) {
-    .signup {
-      margin-left: 0;
-      background-color: white;
-      display: inline-block;
-      padding: 0;
-      margin: 0; } }
+    color: #FF5851; }
 
 .marg-top {
   margin-top: 75px; }
+
+.main-container {
+  background-color: #fff; }
 
 .text-box {
   position: absolute;
@@ -135,7 +139,7 @@ body {
   margin-top: 125px; }
 
 .about-icon {
-  padding-top: 2vh; }
+  padding-top: 1.5vh; }
 
 .about {
   background-color: #FF5851; }
@@ -166,6 +170,112 @@ body {
 
 .blue {
   color: #87cefa; }
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  background-color: #fff;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #DCDCDC;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px; }
+
+/* Container around content */
+.timeline-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%; }
+
+/* The circles on the timeline */
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF5851;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1; }
+
+/* Place the container to the left */
+.timeline-container--left {
+  left: 0; }
+
+/* Place the container to the right */
+.timeline-container--right {
+  left: 50%; }
+
+/* Add arrows to the left container (pointing right) */
+.timeline-container--left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white; }
+
+/* Add arrows to the right container (pointing left) */
+.timeline-container--right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent white; }
+
+/* Fix the circle for containers on the right side */
+.timeline-container--right::after {
+  left: -16px; }
+
+/* The actual content */
+.timeline-container .timeline-content {
+  padding: 20px 30px;
+  background-color: #DCDCDC;
+  position: relative;
+  border-radius: 6px; }
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media all and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px; }
+  /* Full-width containers */
+  .timeline-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px; }
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline-container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent; }
+  /* Make sure all circles are at the same spot */
+  .timeline-container--left::after, .timeline-container--right::after {
+    left: 15px; }
+  /* Make all right containers behave like the left ones */
+  .timeline-container--right {
+    left: 0%; } }
 
 .contact-section {
   margin-top: 125px; }

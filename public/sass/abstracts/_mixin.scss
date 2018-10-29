@@ -1,0 +1,22 @@
+//Override Bootstrap 
+.navbar-light .navbar-brand{
+    color: white;
+}
+
+.navbar-light .navbar-toggler{
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler{
+    padding: .75rem .75rem;
+    font-size: 1.75rem;
+}
+
+.card{
+    border:none;
+}
