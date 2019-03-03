@@ -1,26 +1,31 @@
-.login {
-// background-color: #337eff;
-// border: none; 
-// border-radius: 7.5px;
-// margin-left: 1rem;
 
-// 	@media only screen and (max-width: 991px) {
-// 		margin-left: 0;
-// 		background-color: white;
-// 	}
+.navBtn {
+    background: transparent;
+    border: 2px solid #FF5851;
+    margin: 1rem;
+    border-radius: 0.5rem;
 }
 
-.signup{
-//background-color: #D46A6A;
-// background-color: #50C878;
-// border: solid  $color-white;
-// border-radius: 7.5px;
-// 	@media only screen and (max-width: 991px) {
-// 		margin-left: 0;
-// 		background-color: white;
-// 		display: inline-block;
-// 		padding: 0;
-// 		margin: 0
-// 	}
+.navBtn:hover{
+    // background: rgb(14, 36, 68, .1);
+}
 
+.navbar-light .navbar-nav .nav-link{
+    color: #FF5851
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+   color:  #FF5851;
+}
+
+.navbar-light .navbar-nav .nav-link:active
+ {
+    color: white;
+}
+
+.mainNav{
+    display: block;
+    margin: 2.5rem auto;
+    width: 100%;
+    
 }
