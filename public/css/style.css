@@ -189,9 +189,9 @@ p {
   }
 }
 
-/* .card-img-top:hover {
+.card-img-top:hover {
   transform: translateY(-1.5rem) scale(1.03);
-} */
+}
 
 .projects {
   display: flex;
@@ -401,6 +401,10 @@ a {
   transform: rotateY(180deg);
   /* this doesnt let it flip */
   transform: translate3d(0,0,0) 
+}
+
+.card:hover{
+  transform: translateY(-0.5rem);
 }
 
 .back {
