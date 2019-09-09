@@ -12,50 +12,48 @@
 </header>
 
 <body class="about">
-
+	<form action="http://localhost:3000/download" method="GET">
+		<button class="resume animated tada delay-3s" onclick=""> Resume </button>
+	</form>
 	<main class="about-section">
-
-
-
 		<div class="container white-background">
-			<div class="row align-items-center">
-				<div class="col-sm-3 col-xs-6">
-					<div class="about-section__profile-photo">
-						<div class="about-icon">
-							<img src="images/guaba.jpg" class="ratio img-responsive rounded-circle photo" height="125">
+			<div class="hero">
+					<div class="row align-items-center">
+							<div class="col-sm-3 col-xs-6">
+								<div class="about-section__profile-photo">
+									<div class="about-icon">
+										<img src="images/guaba.jpg" class="ratio img-responsive rounded-circle photo" height="125">
+									</div>
+									<p>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										Redondo Beach, CA
+									</p>
+								</div>
+			
+							</div>
+			
+			
+			
+							<div class="col-sm-9 col-xs-6">
+								<div class="about-section__info mt-3">
+			
+									<p>
+											Hi, I am Jorde! I am a software engineer based in SoCal. Currently,  I mostly develop in the Javascript ecosystem ranging from React/Redux web applications to React Native/Electron applications. However, I have experience developing in Java and tinkering with Kotlin in my spare time. 
+											I graduated from California State University, Dominguez Hills, with a B.S in Computer Science.
+									</p>
+			
+									<p>
+									  While I was in school, I had an internship with Jacobs Engineering, spent a semester at the Googleplex in Moutain View and was working as a back-end devleoper at Farmers Insurance. 
+									</p>
+									</div>
+							</div>
+			
 						</div>
-
-
-
-						<p>
-							<i class="fa fa-map-marker" aria-hidden="true"></i>
-							Redondo Beach, CA
-						</p>
+						<div class="row align-items-center">
+			
 					</div>
-
 				</div>
-
-
-
-				<div class="col-sm-9 col-xs-6">
-					<div class="about-section__info mt-3">
-
-						<p>
-								Hi, I am Jorde! I am a software engineer based in SoCal. Currently,  I mostly develop in the Javascript ecosystem ranging from React/Redux web applications to React Native/Electron applications. However, I have experience developing in Java and tinkering with Kotlin in my spare time. 
-								I graduated from California State University, Dominguez Hills, with a B.S in Computer Science.
-						</p>
-
-						<p>
-						  While I was in school, I had an internship with Jacobs Engineering, spent a semester at the Googleplex in Moutain View and was working as a back-end devleoper at Farmers Insurance. 
-						</p>
-						</div>
-				</div>
-
 			</div>
-			<div class="row align-items-center">
-
-		</div>
-
 	</main>
 
 	<div class=" container white-background">
@@ -63,16 +61,32 @@
 
 			<div class="row">
 					<div class="col-12">
+
 					 <div class="card-deck">
-					   <div class="card customCard">
-						 <img class="card-img-top img-adjusted" >
-						  <div class="card-body">
-							<div class="card-title">Mocki</div>
-							<p class="card-inner">
-							 Real-Time mock interview for software engineers
-							</p>
-						  </div>
-						 <a href="https://github.com/jordeguevara/Mocki"><button class="card-button">Source</button></a>
+
+
+					   <div class="card">
+						   <div class="front">
+									<img class="card-img-top img-adjusted" >
+									<div class="card-body">
+									<div class="card-title">Mocki</div>
+										<p class="card-inner">
+										Real-Time mock interview for software engineers
+										</p>
+
+										<a href="https://github.com/jordeguevara/Mocki"><button class="card-button">Source</button></a>
+										<!-- <span  class="tags">Built in: React, Redux, Node</span> -->
+									</div>
+						   </div>
+						   <!-- To Do - fix flickering -->
+						   <!-- <div class="back">
+								<ul>
+										<li>Passprot.js for Authentication</li>
+										<li>WebSockets via socket.io</li>
+										<li>AceEditor for code editor</li>
+										<li>Redux for statemangement</li>
+								</ul>
+						   </div> -->
 					   </div>
 
 					   <div class="card customCard">
