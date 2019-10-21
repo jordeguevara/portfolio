@@ -1,144 +1,287 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Jguavaa</title>
+    <% include ../partials/head %>
+  </head>
 
-<head>
-	<title>Jguavaa</title>
-	<% include ../partials/head  %>
-</head>
+  <header>
+    <% include ../partials/header %>
+  </header>
 
-
-<header>
-	<% include ../partials/header %>
-</header>
-
-<body class="about">
-	<form action="http://localhost:3000/download" method="GET">
-		<button class="resume animated tada delay-3s" onclick=""> Resume </button>
-	</form>
-	<main class="about-section">
-		<div class="container white-background">
-			<div class="hero">
-					<div class="row align-items-center">
-							<div class="col-sm-3 col-xs-6">
-								<div class="about-section__profile-photo">
-									<div class="about-icon">
-										<img src="images/guaba.jpg" class="ratio img-responsive rounded-circle photo" height="125">
-									</div>
-									<p>
-										<i class="fa fa-map-marker" aria-hidden="true"></i>
-										Redondo Beach, CA
-									</p>
-								</div>
-			
-							</div>
-			
-			
-			
-							<div class="col-sm-9 col-xs-6">
-								<div class="about-section__info mt-3">
-			
-									<p>
-											Hi, I am Jorde! I am a software engineer based in SoCal. Currently,  I mostly develop in the Javascript ecosystem ranging from React/Redux web applications to React Native/Electron applications. However, I have experience developing in Java and tinkering with Kotlin in my spare time. 
-											I graduated from California State University, Dominguez Hills, with a B.S in Computer Science.
-									</p>
-			
-									<p>
-									  While I was in school, I had an internship with Jacobs Engineering, spent a semester at the Googleplex in Moutain View and was working as a back-end devleoper at Farmers Insurance. 
-									</p>
-									</div>
-							</div>
-			
-						</div>
-						<div class="row align-items-center">
-			
-					</div>
-				</div>
-			</div>
-	</main>
-
-	<div class=" container white-background">
-			<h2 class="popping">Projects</h2>
-
-			<div class="row">
-					<div class="col-12">
-
-					 <div class="card-deck">
+  <body class="about">
+    <form action="http://localhost:3000/download" method="GET">
+      <button class="resume animated tada delay-3s" onclick="">Resume</button>
+    </form>
+    <main class="about-section">
+      <div class="container white-background">
+        <div class="hero hoverBox">
+          <div class="row align-items-center">
+            <div class="col-sm-3 col-xs-6">
+              <div class="about-section__profile-photo">
+                <div class="about-icon">
+                  <img
+                    src="images/guaba.jpg"
+                    class="ratio img-responsive rounded-circle photo"
+                    height="125"
+                  />
+                </div>
+                <p>
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  Redondo Beach, CA
+                </p>
+              </div>
+            </div>
 
 
-					   <div class="card">
-						   <div class="front">
-									<img class="card-img-top img-adjusted" >
-									<div class="card-body">
-									<div class="card-title">Mocki</div>
-										<p class="card-inner">
-										Real-Time mock interview for software engineers
-										</p>
+            <div class="col-sm-9 col-xs-6">
+              <div class="about-section__info mt-3">
+                <p class="p-about">
+                  Hi, I am Jorde! I am a software engineer based in SoCal.
+                  Currently, I mostly develop in the Javascript ecosystem
+                  ranging from React/Redux web applications to React
+                  Native/Electron applications. However, I have experience
+                  developing in Java and tinkering with Kotlin in my spare time.
+                  I graduated from California State University, Dominguez Hills,
+                  with a B.S in Computer Science.
+                </p>
+                <p class="p-about">                   I also have multiple years of experience with full stack applications and backend database development with a proficiency in Node.js, Python , Java, React, and SQL.</p>
+                <p class="p-about">
+                  While I was in school, I had an internship with Jacobs
+                  Engineering, spent a semester at the Googleplex in Moutain
+                  View and was working as a back-end devleoper at Farmers
+                  Insurance.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center"></div>
+        </div>
+      </div>
+    <!-- </main> -->
 
-										<a href="https://github.com/jordeguevara/Mocki"><button class="card-button">Source</button></a>
-										<!-- <span  class="tags">Built in: React, Redux, Node</span> -->
-									</div>
-						   </div>
-						   <!-- To Do - fix flickering -->
-						   <!-- <div class="back">
-								<ul>
-										<li>Passprot.js for Authentication</li>
-										<li>WebSockets via socket.io</li>
-										<li>AceEditor for code editor</li>
-										<li>Redux for statemangement</li>
-								</ul>
-						   </div> -->
-					   </div>
+    <div class=" container white-background">
+      <h2 class="popping"> Recent Projects</h2>
+      <div class="row">
+        <div class="col-12">
+            <div class="card customCard hoverBox">
+              <div class="front">
+                <div class="card-body">
+                  <div class="card-title">Mocki</div>
+                  <p class="card-inner">
+                    Real-Time mock interview for software engineers
+                  </p>
+                  <ul class="tags">
+                      <li><a href="#" class="tag">React</a></li>
+                   <li><a href="#" class="tag">Node.js</a></li>
+                   <li><a href="#" class="tag">Redux</a></li>
+                   <li><a href="#" class="tag">WebSockets</a></li>
+                 </ul>
+                  <img id="p3" class="card-img hidden" src="images/mocki.gif" >
+                  <a href="https://github.com/jordeguevara/Mocki"><button class="btn btn-primary btn-lg classic">Source</button></a>
+                  <a><button id="3" class="btn btn-primary btn-lg classic" onclick="reveal(event)">Preview</button></a>
+                </div>	
+            </div>
+            </div>
+        </div>
+    </div>
 
-					   <div class="card customCard">
-							<img class="card-img-top img-adjusted" >
-							 <div class="card-body">
-							   <div class="card-title">Customer Checkout</div>
-							   <p class="card-inner">
-								Java Application allow you to checkout items
-							   </p>
-							 </div>
-							 <a href="https://github.com/jordeguevara/ShoppingCart"><button class="card-button">Source</button></a>
-						  </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="card customCard hoverBox">
+                <div class="card-body">
+                  <div class="card-title">Apache Log Parser</div>
+                  <p class="card-inner">
+                   Parses large apache log files and extract data from the IP address along as find out user agent data and export all of it to a csv file
+                  </p>
+                  <ul class="tags">
+                   <li><a href="#" class="tag">Node.js</a></li>
+                   <li><a href="#" class="tag">Command Line</a></li>
+                 </ul>
+                  <img id="p2" class="card-img hidden" src="images/parse.gif" >
+                  <a href="https://github.com/jordeguevara/logParser"><button class="btn btn-primary btn-lg classic">Source</button></a>
+                  <a><button id="2" class="btn btn-primary btn-lg classic" onclick="reveal(event)">Preview</button></a>
+                </div>	
+          </div>
+        </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-12">
+        <div class="card  customCard hoverBox">
+           <div class="card-body">
+             <div class="card-title">LetsVybe</div>
+             <p class="card-inner">
+             A social media app to connect with others that share similar interests to build more authenticate friendships.
+             <br/>
+             LetsVybe is implemented entirely from scratch using Vanilla JavaScript
+             </p>
+             <ul class="tags">
+              <li><a href="#" class="tag">HTML</a></li>
+              <li><a href="#" class="tag">CSS</a></li>
+              <li><a href="#" class="tag">JavaScript</a></li>
+            </ul>
+             <img id="p1" class="card-img hidden" src="images/a.gif" >
+             <a href="https://github.com/jordeguevara/LetsVybe_Final"><button class="btn btn-primary btn-lg classic">Source</button></a>
+             <a><button id="1" class="btn btn-primary btn-lg classic" onclick="reveal(event)">Preview</button></a>
+           </div>	
+          </div> 
+      </div>
+    </div>
 
-						  <div class="card customCard">
-								<img class="card-img-top img-adjusted" >
-								 <div class="card-body">
-								   <div class="card-title">Books</div>
-								   <p class="card-inner">
-									 Filter through books and save to your wishlist, built in Flask
-								   </p>
-								 </div>
-								 <a href="https://github.com/jordeguevara/libraryAPI"><button class="card-button">Source</button></a>
-							  </div>
-							  <div class="card customCard">
-									<img class="card-img-top img-adjusted" >
-									 <div class="card-body">
-									   <div class="card-title">LetsVybe</div>
-									   <p class="card-inner">
-										 Social Media App to connect with others with similar interests
-									   </p>
-									 </div>
-									 <a href="https://github.com/jordeguevara/LetsVybe_Final"><button class="card-button">Source</button></a>
-								  </div>
-					 </div>
-					</div>
-				   </div>
+  <button id="doodleBtn" class="btn btn-primary customCard" onclick="showDoodle(event)">See More</button>
+    <div id="doodle" class="hidden">
+      <br/>
+        <h2 class="popping"> Just for Kicks </h2>
+    <div  class="row">
+      <div class="col-sm-4">
+        <div class="card customCard hoverBox">
+            <img class="card-img-top" src="images/calc.gif" alt="Calc app">
+          <div class="card-body">
+            <h5 class="card-title"> Interest Calculator</h5>
+            <!-- <p class="card-text">It's a broader card with text below as a natural lead-in to extra content. This content is a little longer.</p> -->
+            <ul class="tags">
+                <li><a href="#" class="tag">Angular</a></li>
+              </ul>
+              <a><button class="btn btn-primary btn-lg classic">Source</button></a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-sm-4">
+        <div class="card customCard hoverBox">
+            <img class="card-img-top" src="images/insta.gif" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"> Instagram Bot</h5>
+            <!-- <p class="card-text">It's a broader card with text below as a natural lead-in to extra content. This content is a little longer.</p> -->
+            <ul class="tags">
+                <li><a href="#" class="tag">Python</a></li>
+                <li><a href="#" class="tag">Automation</a></li>
+              </ul>
+              <a><button class="btn btn-primary btn-lg classic">Source</button></a>
+          </div>
+        </div>
+      </div>
+    
+    
+      <div class="col-sm-4">
+        <div class="card customCard hoverBox">
+          <img class="card-img-top" src="images/three.gif" alt="Three.js">
+          <div class="card-body">
+            <h5 class="card-title">Three.js</h5>
+            <!-- <p class="card-text">It's a broader card with text below as a natural lead-in to extra content. This content is a little longer.</p> -->
+            <ul class="tags">
+                <li><a href="#" class="tag">WebGL</a></li>
+                <li><a href="#" class="tag">JavaScript</a></li>
+              </ul>
+              <a><button class="btn btn-primary btn-lg classic">Source</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
 
+
+
+    </div>
+
+
+	  <!-- <div class="row">
+		<div class="col-12">
+			<div class="card customCard">
+				<img class="card-img-top img-adjusted" >
+				 <div class="card-body">
+				   <div class="card-title">Customer Checkout</div>
+				   <p class="card-inner">
+					Java Application allow you to checkout items
+				   </p>
+				 </div>
+				 <a href="https://github.com/jordeguevara/ShoppingCart"><button class="card-button">Source</button></a>
+			  </div>
 		</div>
+	  </div>
 
+	  <div class="row">
+		<div class="col-12">
+			<div class="card customCard">
+				<img class="card-img-top img-adjusted" >
+				 <div class="card-body">
+				   <div class="card-title">Books</div>
+				   <p class="card-inner">
+					 Filter through books and save to your wishlist, built in Flask
+				   </p>
+				 </div>
+				 <a href="https://github.com/jordeguevara/libraryAPI"><button class="card-button">Source</button></a>
+			  </div>
+		</div>
+	</div> -->
+	  
+    </div>
+<script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"
+></script>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+      integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="/javascripts/about.js"></script>
+    <script src="anime.min.js"></script>
+    <script>
+      function reveal(e){ // Closes and opens images when preview button is clicked
+       const id = e.target.id;
+       let imgId ='p' +id
+        if(document.getElementById(imgId).style.display === ''){
+          document.getElementById(imgId).style.display = "block";
+        }
+         
+        else if(document.getElementById(imgId).style.display === "block"){
+          document.getElementById(imgId).style.display = "";
+        }
 
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-	 crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-	 crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-	 crossorigin="anonymous"></script>
-	<script type="text/javascript" src="/javascripts/about.js"></script>
+      }
 
-	<footer>
-		<% include ../partials/footer %>
-	</footer>
+      function showDoodle(e){
+        let id ='doodle';
+         if(document.getElementById(id).style.display === ''){
+          document.getElementById('doodleBtn').innerText = 'Shrink';
+          document.getElementById(id).style.display = "block"
+         }
+         else if(document.getElementById(id).style.display === "block"){
+           document.getElementById(id).style.display = ""
+           document.getElementById('doodleBtn').innerText = 'See More';
+         }
 
-</body>
+      }
 
+var pathEls = document.querySelectorAll('path');
+for (var i = 0; i < pathEls.length; i++) {
+  var pathEl = pathEls[i];
+  var offset = anime.setDashoffset(pathEl);
+  pathEl.setAttribute('stroke-dashoffset', offset);
+  anime({
+    targets: pathEl,
+    duration: anime.random(1000, 1500),
+    loop: true,
+    direction: 'alternate',
+    easing: 'easeInOutSine',
+    autoplay: true
+  });
+}
+    </script>
+</main>
+    <footer>
+      <% include ../partials/footer %>
+    </footer>
+  </body>
 </html>
