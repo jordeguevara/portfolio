@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jguavaa | Full Stack Developer</title>
+    <% include ../partials/head %>
+  </head>
+
+  <header>
+    <% include ../partials/header %>
+  </header>
+  <body class="about">
+    <main class="about-section">
+      <div class="container white-background">
+          <div class="ui secondary pointing menu">
+              <a class="item" href="/">
+                About
+              </a>
+              <a class="active item" href="/tut">
+                Tutorials
+              </a>
+              <a class="item">
+              </a>
+            </div>
+	  
+    </div>
+    
+    <div class="container">
+            <% tuts.forEach(function(tut) { %>
+                <div class="ui fluid card">
+                        <div class="content">
+                          <div class="center aligned header"><%= tut.title %></div>
+                          <div class=" description">
+                                <img class="ui middle aligned tiny image" src="images/py.svg">
+                                <span><%= tut.description %></span>
+                          </div>
+                        </div>
+                        <div class="extra content">
+                          <div class="center aligned author">
+                                <img class="ui avatar image" src="/images/py.svg"> <%= tut.tag %>
+                          </div>
+                        </div>
+                      </div>
+            <% }); %>
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+<script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"
+></script>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+      integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="/javascripts/about.js"></script>
+    <script src="anime.min.js"></script>
+    <script>
+      function reveal(e){ // Closes and opens images when preview button is clicked
+       const id = e.target.id;
+       let imgId ='p' +id
+        if(document.getElementById(imgId).style.display === ''){
+          document.getElementById(imgId).style.display = "block";
+        }
+         
+        else if(document.getElementById(imgId).style.display === "block"){
+          document.getElementById(imgId).style.display = "";
+        }
+
+      }
+
+      function showDoodle(e){
+        let id ='doodle';
+         if(document.getElementById(id).style.display === ''){
+          document.getElementById('doodleBtn').innerText = 'Shrink';
+          document.getElementById(id).style.display = "block"
+         }
+         else if(document.getElementById(id).style.display === "block"){
+           document.getElementById(id).style.display = ""
+           document.getElementById('doodleBtn').innerText = 'See More';
+         }
+
+      }
+
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150537404-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150537404-1');
+</script>
+
+</main>
+    <footer>
+      <% include ../partials/footer %>
+    </footer>
+  </body>
+</html>
