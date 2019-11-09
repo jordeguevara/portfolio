@@ -472,7 +472,11 @@ a {
 }
 
 .email-me{
-  color: #021859;
+  color: #fff;
+}
+
+.email-me:hover{
+  color: #ccc;
 }
 .resume {
   display: inline-block;
